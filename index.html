@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = date + "<br>" + time;
+        }, 1000);
+    </script>
+    <title>Covid-19 | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Covid-19</h1>
+    <nav class="top">
+        <a href="index.html">Home</a> &nbsp;
+        <a href="feedback.html">Feedback</a>&nbsp;
+        <a href="aboutUs.html">About Us</a>&nbsp;
+    </nav>
+    <div class="box">
+    <br>
+    <h2 class="main">"MAINTAIN SOCIAL DISTANCE"</h2>
+    <h2>Information</h2>
+    <p class="container">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered
+        coronavirus.<br><br>
+        Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover
+        without requiring special treatment. Older people, and those with underlying medical problems like
+        cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious
+        illness.<br><br>
+
+        The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease
+        it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an
+        alcohol based rub frequently and not touching your face.<br>
+        <br>
+        The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected
+        person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by
+        coughing into a flexed elbow).<br>
+    </p><br>
+    <h2>Prevention</h2>
+    <ul>To prevent infection and to slow transmission of COVID-19, do the following:</ul>
+    <li>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</li>
+    <li>Maintain at least 1 metre distance between you and people coughing or sneezing.</li>
+    <li>Avoid touching your face.</li>
+    <li>Cover your mouth and nose when coughing or sneezing.</li>
+    <li>Stay home if you feel unwell.</li>
+    <li>Refrain from smoking and other activities that weaken the lungs.</li>
+    <li>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.
+    </li>
+    <h2>Symptoms</h2>
+    <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p><br>
+    <ul>Most common symptoms:</ul>
+    <li>fever.</li>
+    <li>dry cough.</li>
+    <li>tiredness.</li><br>
+
+    <ul>Less common symptoms:</ul>
+    <li>aches and pains.</li>
+    <li>sore throat.</li>
+    <li>diarrhoea.</li>
+    <li>conjunctivitis.</li>
+    <li>headache.</li>
+    <li>loss of taste or smell.</li>
+    <li>a rash on skin, or discolouration of fingers or toes.</li>
+    <br>
+    <ul>Serious symptoms:</ul>
+    <li>difficulty breathing or shortness of breath.</li>
+    <li>chest pain or pressure.</li>
+    <li>loss of speech or movement.</li>
+
+    <p>Seek immediate medical attention if you have serious symptoms.  Always call before visiting your doctor or health facility. 
+        <br> <br>
+        People with mild symptoms who are otherwise healthy should manage their symptoms at home. 
+        <br> <br>
+        On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.</p>
+        <br>
+    <table style="width: 50%;">
+        <tr>
+            <th>Cases in India</th>
+            <th>11M</th>
+        </tr>
+        <tr>
+            <th>State</th>
+            <th>Number of cases</th>
+        </tr>
+        <tr>
+            <td>Delhi</td> <!-- add data to table  -->
+            <td>637K</td>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>2.06M</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>1.02M</td>
+        </tr>
+        <tr>
+            <td>Karnataka</td>
+            <td>946K</td>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>2.06M</td>
+        </tr>
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>889K</td>
+        </tr>
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>846K</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>602K</td>
+        </tr>
+
+    </table>   
+</div>
+<img src="cov.jpg" alt="This is an image" width="45%" height="300px" style="border-radius: 10px;" >
+<img src="mask.jpg" alt="This is an image" width="45%"  height="300px" style="border-radius: 10px; float: left;" ><br>
+<footer>
+    <nav class="bot">
+        <a href="index.html">Home</a> &nbsp;
+        <a href="feedback.html">Feedback</a>&nbsp;
+        <a href="aboutUs.html">About Us</a>&nbsp;
+        <a style="text-align: right;">Copyrights</a>
+    </nav>
+    <span id="time"></span>
+</footer>
+</body>
+
+</html>
