@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutUs.css">
+    <title>About Us</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = date + "<br>" + time;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="feedback.html.html">Feedback</a>&nbsp;
+        <a href="aboutUs.html">About Us</a>&nbsp;
+    </nav><br>
+    <div class="nam1">
+        <h2>Desinger :Shashwat Jain</h2><br>
+        <p>Hello Ji.🙏🙏🙏 This is Shashwat Jain. I am a Softwate Engineer Undergraduate Student At Delhi
+            Technological University. </p>
+        <hr>
+        <h3>Education</h3>
+        <p>Class 1- 12 : Ahlcon Public School</p>
+        <p>University : Delhi Technological University</p>
+        <hr>
+        <h3>Skills</h3>
+        <p>Hackerrank CPP ⭐⭐⭐⭐⭐</p > <p> Hackerrank Problem Solving ⭐⭐⭐⭐⭐</p>
+        <p>Hackerrank Python ⭐ </p><p> Codechef ⭐⭐</p>
+        <hr>
+        <h3>Contact Details</h3>
+        <p>Contat Number: 9821488462</p>
+        <p>Email Id: sjshashwat99@gmail.com</p>
+    </div>
+    <div class="nam1">
+        <h2>Desinger :Aditya Bhandari</h2><br>
+        <p>Hello Ji.🙏🙏🙏 This is Aditya Bhandari. I am a Softwate Engineer Undergraduate Student At Delhi
+            Technological University. </p>
+        <hr>
+        <h3>Education</h3>
+        <p>Class 1- 12 : Ahlcon Public School</p>
+        <p>University : Delhi Technological University</p>
+        <hr>
+        <h3>Skills</h3>
+        <p>  Hackerrank CPP ⭐⭐⭐⭐⭐</p> <p> Hackerrank Problem Solving ⭐⭐⭐⭐⭐</p>
+        <p>Hackerrank Python ⭐⭐⭐ </p><p> Codechef ⭐⭐</p>
+        <hr>
+        <h3>Contact Details</h3>
+        <p>Contat Number: 8587816852</p>
+        <p>Email Id: adityabhandari8876@gmail.com</p>
+    </div>
+    <span id="time"></span>
+</body>
+
+</html>
