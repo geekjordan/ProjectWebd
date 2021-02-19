@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            if (a.getSeconds() < 10)
+                a.getSeconds() = 0 + a.getSeconds();
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = date + "<br>" + time;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Feedback Form</h1>
+        </div> 
+    <nav>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="feedback.html">Feedback</a>&nbsp;
+        <a href="aboutUs.html">About Us</a>&nbsp;
+    </nav><br>    
+   <form>
+       <p>We would be enlighten to take your feedback and improve our site.</p>
+    <p>Name: *<input type="text" id="name" required></p> 
+    <p>Email: *<input type="email" name="email" id="email" required></p>  
+    <p>Mobile Number <input type="number" name="num" id="num"></p>
+    <p>Address: </p>
+    <textarea name="add" cols="70" rows="3"></textarea>
+    <p>Query: *</p>
+    <textarea cols="90" rows="5" required></textarea>
+<p><input type="checkbox" ></p>
+<p>I would like to receive a copy of my response.</p>
+<p>By clicking the submit button, you agree to our terms & conditions and privacy policy.</p>
+<p><input type="submit" value="Submit" class="submit"></p>
+</form>
+<span id="time"></span>
+</body>
+</html>
